@@ -58,7 +58,7 @@ var applicationID = '73CDE868';
 
 
 // this must match the namespace defined in the file: \app\settings.ts
-var namespace = 'urn:x-cast:com.angular2.chromecast.receiver.starterkit';
+var namespace = 'urn:x-cast:com.angular2.chromecast.receiver.eightNights';
 
 
 
@@ -213,20 +213,10 @@ function sendVersionMessage() {
 </head>
 <body>
   <p>Click a button to send a message to navigate to a new page:</p>
-  <button onclick="sendNavigateMessage('Splash')">Splash Page</button>
-  <button onclick="sendNavigateMessage('Home')">Home Page</button>
-  <button onclick="sendNavigateMessage('Page1')">Page 1</button>
-  <button onclick="sendNavigateMessage('Fonts')">Fonts Page 1</button>
-  <button onclick="sendNavigateMessage('Fonts2')">Fonts Page 2</button>
-  <button onclick="sendNavigateMessage('Fonts3')">Fonts Page 3</button>
-  <button onclick="sendNavigateMessage('Fonts4')">Fonts Page 4</button>
-  <button onclick="sendNavigateMessage('Grid')">Bootstrap Grid</button>
-  <button onclick="sendNavigateMessage('Glyphicons')">Glyphicons</button>
-  <button onclick="sendVersionMessage()">Receiver Version</button>
+  <button onclick="sendNavigateMessage('MaterialMenorah')">Material Menorah</button>
+  <button onclick="sendMessage({candleNumber: 0, isLit: true})">Light Candle 1</button>
 
   <br>
-  <p>Message to show on Page1:</p>
-  <input id="input" class="border" type="text" size="20"/>
 
   <!-- Debbugging output -->
   <div style="margin:10px; ">

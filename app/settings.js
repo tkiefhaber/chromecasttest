@@ -6,7 +6,7 @@ System.register([], function(exports_1, context_1) {
         setters:[],
         execute: function() {
             exports_1("_settings", _settings = {
-                chromecastNamespace: 'urn:x-cast:com.angular2.chromecast.receiver.starterkit',
+                chromecastNamespace: 'urn:x-cast:com.angular2.chromecast.receiver.eightNights',
                 version: '0.8.0'
             });
         }

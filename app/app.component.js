@@ -1,4 +1,4 @@
-System.register(['angular2/core', './services/message-bus/message-bus.service', './services/cast-receiver-manager/cast-receiver-manager.service', 'angular2/router', './settings', './screens/splash/splash.component', './screens/home/home.component', './screens/page1/page1.component', './screens/fonts/fonts.component', './screens/fonts2/fonts2.component', './screens/fonts3/fonts3.component', './screens/fonts4/fonts4.component', './screens/bootstrap-grid/bootstrap-grid.component', './screens/glyphicons/glyphicons.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './services/message-bus/message-bus.service', './services/cast-receiver-manager/cast-receiver-manager.service', 'angular2/router', './settings', './screens/material-menorah/material-menorah.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './services/message-bus/message-bus.service', 
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, message_bus_service_1, cast_receiver_manager_service_1, router_1, settings_1, splash_component_1, home_component_1, page1_component_1, fonts_component_1, fonts2_component_1, fonts3_component_1, fonts4_component_1, bootstrap_grid_component_1, glyphicons_component_1;
+    var core_1, message_bus_service_1, cast_receiver_manager_service_1, router_1, settings_1, material_menorah_component_1;
     var AppComponent;
     return {
         setters:[
@@ -29,32 +29,8 @@ System.register(['angular2/core', './services/message-bus/message-bus.service', 
             function (settings_1_1) {
                 settings_1 = settings_1_1;
             },
-            function (splash_component_1_1) {
-                splash_component_1 = splash_component_1_1;
-            },
-            function (home_component_1_1) {
-                home_component_1 = home_component_1_1;
-            },
-            function (page1_component_1_1) {
-                page1_component_1 = page1_component_1_1;
-            },
-            function (fonts_component_1_1) {
-                fonts_component_1 = fonts_component_1_1;
-            },
-            function (fonts2_component_1_1) {
-                fonts2_component_1 = fonts2_component_1_1;
-            },
-            function (fonts3_component_1_1) {
-                fonts3_component_1 = fonts3_component_1_1;
-            },
-            function (fonts4_component_1_1) {
-                fonts4_component_1 = fonts4_component_1_1;
-            },
-            function (bootstrap_grid_component_1_1) {
-                bootstrap_grid_component_1 = bootstrap_grid_component_1_1;
-            },
-            function (glyphicons_component_1_1) {
-                glyphicons_component_1 = glyphicons_component_1_1;
+            function (material_menorah_component_1_1) {
+                material_menorah_component_1 = material_menorah_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -97,50 +73,10 @@ System.register(['angular2/core', './services/message-bus/message-bus.service', 
                     }),
                     router_1.RouteConfig([
                         {
-                            path: '/splash',
-                            name: 'Splash',
-                            component: splash_component_1.SplashComponent,
+                            path: '/MaterialMenorah',
+                            name: 'MaterialMenorah',
+                            component: material_menorah_component_1.MaterialMenorahComponent,
                             useAsDefault: true
-                        },
-                        {
-                            path: '/home',
-                            name: 'Home',
-                            component: home_component_1.HomeComponent
-                        },
-                        {
-                            path: '/page1/:message',
-                            name: 'Page1',
-                            component: page1_component_1.Page1Component
-                        },
-                        {
-                            path: '/fonts',
-                            name: 'Fonts',
-                            component: fonts_component_1.FontsComponent
-                        },
-                        {
-                            path: '/fonts2',
-                            name: 'Fonts2',
-                            component: fonts2_component_1.Fonts2Component
-                        },
-                        {
-                            path: '/fonts3',
-                            name: 'Fonts3',
-                            component: fonts3_component_1.Fonts3Component
-                        },
-                        {
-                            path: '/fonts4',
-                            name: 'Fonts4',
-                            component: fonts4_component_1.Fonts4Component
-                        },
-                        {
-                            path: '/grid',
-                            name: 'Grid',
-                            component: bootstrap_grid_component_1.BootstrapGridComponent
-                        },
-                        {
-                            path: '/glyphicons',
-                            name: 'Glyphicons',
-                            component: glyphicons_component_1.GlyphiconsComponent
                         },
                     ]), 
                     __metadata('design:paramtypes', [message_bus_service_1.MessageBusService, router_1.Router])

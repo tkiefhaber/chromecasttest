@@ -5,15 +5,7 @@ import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS, Router } from 'angula
 
 import { _settings } from './settings';
 
-import { SplashComponent } from './screens/splash/splash.component';
-import { HomeComponent } from './screens/home/home.component';
-import { Page1Component } from './screens/page1/page1.component';
-import { FontsComponent } from './screens/fonts/fonts.component';
-import { Fonts2Component } from './screens/fonts2/fonts2.component';
-import { Fonts3Component } from './screens/fonts3/fonts3.component';
-import { Fonts4Component } from './screens/fonts4/fonts4.component';
-import { BootstrapGridComponent } from './screens/bootstrap-grid/bootstrap-grid.component';
-import { GlyphiconsComponent } from './screens/glyphicons/glyphicons.component';
+import { MaterialMenorahComponent } from './screens/material-menorah/material-menorah.component';
 
 @Component({
     selector: 'my-app',
@@ -27,50 +19,10 @@ import { GlyphiconsComponent } from './screens/glyphicons/glyphicons.component';
 })
 @RouteConfig([
   {
-    path: '/splash',
-    name: 'Splash',
-    component: SplashComponent,
+    path: '/MaterialMenorah',
+    name: 'MaterialMenorah',
+    component: MaterialMenorahComponent,
     useAsDefault: true
-  },
-  {
-    path: '/home',
-    name: 'Home',
-    component: HomeComponent
-  },
-  {
-    path: '/page1/:message',
-    name: 'Page1',
-    component: Page1Component
-  },
-  {
-    path: '/fonts',
-    name: 'Fonts',
-    component: FontsComponent
-  },
-  {
-    path: '/fonts2',
-    name: 'Fonts2',
-    component: Fonts2Component
-  },
-  {
-    path: '/fonts3',
-    name: 'Fonts3',
-    component: Fonts3Component
-  },
-  {
-    path: '/fonts4',
-    name: 'Fonts4',
-    component: Fonts4Component
-  },
-  {
-    path: '/grid',
-    name: 'Grid',
-    component: BootstrapGridComponent
-  },
-  {
-    path: '/glyphicons',
-    name: 'Glyphicons',
-    component: GlyphiconsComponent
   },
 ])
 export class AppComponent implements OnInit {

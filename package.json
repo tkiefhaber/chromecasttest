@@ -1,6 +1,10 @@
 {
-  "name": "angular2-chromecast-receiver-starterkit",
-  "version": "1.0.0",
+  "name": "chromecasttest",
+  "repository": {
+    "type": "git",
+    "url": "git@github-personal:tkiefhaber/chromecasttest.git"
+  },
+  "version": "1.0.1",
   "scripts": {
     "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "tsc": "tsc",
